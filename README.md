@@ -168,3 +168,8 @@ chmod +x deploy.sh
 ./deploy.sh
 ```
 This builds the container image remotely and deploys it as an unauthenticated HTTP service, automatically linking with Cloud Run's default environment and ports.
+
+- **Security Features**: Rate-limited alerting (max 1 IMMEDIATE_HAZARD alert 
+  per source per 48 hours), no personally identifiable information stored 
+  beyond a reporter ID, and safety thresholds pinned to static, versioned 
+  reference data that agents cannot alter at runtime.
